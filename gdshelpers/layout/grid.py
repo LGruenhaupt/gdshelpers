@@ -4,7 +4,7 @@ from shapely.affinity import translate
 
 from gdshelpers.geometry.chip import Cell
 from gdshelpers.helpers import StandardLayers
-from gdshelpers.parts.text import Text
+from gdshelpers.parts.photonics.text import Text
 from gdshelpers.helpers.alignment import Alignment
 
 

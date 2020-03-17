@@ -129,7 +129,7 @@ def _write_data_and_start_blender(shapely_3d_list, filename, scale, render, save
 
 
 def _example_i():
-    from gdshelpers.parts.splitter import MMI
+    from gdshelpers.parts.photonics.splitter import MMI
 
     mmi1 = MMI((0, 0), 0, 1, 42, 7.7, 2, 2)
     mmi2 = MMI((0, 10), 0, 1, 42, 7.7, 2, 2)
@@ -147,7 +147,7 @@ def _example_i():
 
 
 def _example_ii():
-    from gdshelpers.parts.splitter import MMI
+    from gdshelpers.parts.photonics.splitter import MMI
     from gdshelpers.geometry import geometric_union
 
     mmi1 = MMI((0, 0), 0, 1, 42, 7.7, 2, 2)
@@ -171,8 +171,8 @@ def _example_ii():
 
 
 def _example_iii():
-    from gdshelpers.parts.waveguide import Waveguide
-    from gdshelpers.parts.coupler import GratingCoupler
+    from gdshelpers.parts.photonics.waveguide import Waveguide
+    from gdshelpers.parts.photonics.coupler import GratingCoupler
     from gdshelpers.geometry import geometric_union
     import numpy as np
 

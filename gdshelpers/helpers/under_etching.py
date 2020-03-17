@@ -2,7 +2,7 @@ import numpy as np
 from shapely.geometry import LineString, CAP_STYLE
 
 from gdshelpers.geometry import geometric_union, shapely_adapter
-from gdshelpers.parts.coupler import GratingCoupler
+from gdshelpers.parts.photonics.coupler import GratingCoupler
 
 
 def create_holes_for_under_etching(underetch_parts, complete_structure, hole_radius, hole_distance, hole_spacing,
@@ -50,8 +50,8 @@ def create_holes_for_under_etching(underetch_parts, complete_structure, hole_rad
 
 def _example():
     from gdshelpers.geometry.chip import Cell
-    from gdshelpers.parts.waveguide import Waveguide
-    from gdshelpers.parts.resonator import RingResonator
+    from gdshelpers.parts.photonics.waveguide import Waveguide
+    from gdshelpers.parts.photonics.resonator import RingResonator
 
     # ==== create some sample structures (straight line with ring resonator)
     wg = Waveguide(origin=(0, 0), angle=np.deg2rad(-90), width=1)

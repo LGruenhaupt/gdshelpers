@@ -1,7 +1,7 @@
 import unittest
 import numpy as np
 
-from gdshelpers.parts.waveguide import Waveguide
+from gdshelpers.parts.photonics.waveguide import Waveguide
 from gdshelpers.helpers.positive_resist import convert_to_positive_resist
 
 

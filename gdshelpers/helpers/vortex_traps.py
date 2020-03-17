@@ -64,7 +64,7 @@ def fill_waveguide_with_holes_in_honeycomb_lattice(waveguide, spacing, padding, 
 
 if __name__ == '__main__':
     from gdshelpers.geometry.chip import Cell
-    from gdshelpers.parts.waveguide import Waveguide
+    from gdshelpers.parts.photonics.waveguide import Waveguide
 
     wg = Waveguide((0, 0), 0, [3, 3, 3, 3, 3])
     wg.add_straight_segment(5)

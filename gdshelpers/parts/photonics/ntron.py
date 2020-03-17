@@ -6,8 +6,8 @@ from itertools import chain
 from gdshelpers.geometry import convert_to_gdscad
 from gdshelpers.helpers.bezier import CubicBezierCurve
 from gdshelpers.geometry import geometric_union
-from gdshelpers.parts.port import Port
-from gdshelpers.parts.waveguide import Waveguide
+from gdshelpers.parts.photonics.port import Port
+from gdshelpers.parts.photonics.waveguide import Waveguide
 
 
 class Ntron:

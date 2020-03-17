@@ -192,7 +192,7 @@ class Port:
 
     @property
     def debug_shape(self):
-        from gdshelpers.parts.waveguide import Waveguide
+        from gdshelpers.parts.photonics.waveguide import Waveguide
         d = self.total_width / 5
         wg = Waveguide.make_at_port(self.longitudinal_offset(-d), width=self.total_width * 10)
         wg.add_straight_segment(d)

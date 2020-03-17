@@ -5,7 +5,7 @@ import shapely.affinity
 
 from gdshelpers.parts import Port
 from gdshelpers.geometry import geometric_union
-from gdshelpers.parts.waveguide import Waveguide
+from gdshelpers.parts.photonics.waveguide import Waveguide
 
 
 class CNT:
@@ -143,7 +143,7 @@ class CNT:
 def _example_cnt():
     import gdsCAD.core
     from gdshelpers.geometry import convert_to_gdscad
-    from gdshelpers.parts.waveguide import Waveguide
+    from gdshelpers.parts.photonics.waveguide import Waveguide
 
     # photonics
     start_port = Port((0, 0), 0, 1.1)

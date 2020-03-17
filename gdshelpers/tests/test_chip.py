@@ -5,7 +5,7 @@ from shapely.geometry.point import Point
 from shapely.geometry.linestring import LineString
 
 from gdshelpers.geometry.chip import Cell
-from gdshelpers.parts.waveguide import Waveguide
+from gdshelpers.parts.photonics.waveguide import Waveguide
 
 
 class DeviceTestCase(unittest.TestCase):

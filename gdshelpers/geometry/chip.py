@@ -248,7 +248,6 @@ class Cell:
         return self.cell_gdspy
 
     def get_oasis_cells(self, grid_steps_per_micron=1000, executor=None):
-        import fatamorgana
         import fatamorgana.records
         if self.cell_oasis is None:
             self.cell_oasis = fatamorgana.Cell(fatamorgana.NString(self.name))
@@ -536,8 +535,8 @@ class Cell:
         :param layer: Layer at which the marker and markers should be written
         :param origin: Position of the marker
         """
-        from gdshelpers.parts.marker import DLWMarker
-        from gdshelpers.parts.text import Text
+        from gdshelpers.parts.photonics.marker import DLWMarker
+        from gdshelpers.parts.photonics.text import Text
 
         self.add_to_layer(layer, DLWMarker(origin))
         self.add_to_layer(std_layers.parnamelayer1, Text(origin, 2, label, alignment='center-center'))
@@ -557,11 +556,11 @@ class Cell:
             In certain designs the standard positions are not appropriate and
             can therefore be disabled and manually added
         """
-        from gdshelpers.parts.text import Text
+        from gdshelpers.parts.photonics.text import Text
 
         taper_port = port.longitudinal_offset(taper_length)
         if taper_length > 0:
-            from gdshelpers.parts.waveguide import Waveguide
+            from gdshelpers.parts.photonics.waveguide import Waveguide
             wg = Waveguide.make_at_port(port)
             wg.add_straight_segment(taper_length, final_width=tip_width)
             self.add_to_layer(layer, wg.get_shapely_object())
@@ -576,8 +575,8 @@ class Cell:
 
 
 if __name__ == '__main__':
-    from gdshelpers.parts.port import Port
-    from gdshelpers.parts.waveguide import Waveguide
+    from gdshelpers.parts.photonics.port import Port
+    from gdshelpers.parts.photonics.waveguide import Waveguide
 
     # Create a cell-like object that offers a save output command '.save' which creates the .gds or .oas file by using
     # gdspy or fatamorgana

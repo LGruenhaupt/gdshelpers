@@ -124,8 +124,8 @@ def write_cell_to_gdsii_file(outfile, cell, unit=1e-6, grid_steps_per_unit=1000,
 
 
 if __name__ == '__main__':
-    from gdshelpers.parts.port import Port
-    from gdshelpers.parts.waveguide import Waveguide
+    from gdshelpers.parts.photonics.port import Port
+    from gdshelpers.parts.photonics.waveguide import Waveguide
     from gdshelpers.geometry.chip import Cell
 
     device_cell = Cell('cell')

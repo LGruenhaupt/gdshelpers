@@ -1,6 +1,6 @@
 import unittest
 
-from gdshelpers.parts.splitter import Splitter
+from gdshelpers.parts.photonics.splitter import Splitter
 
 
 class SplitterTestCase(unittest.TestCase):

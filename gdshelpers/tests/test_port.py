@@ -1,7 +1,7 @@
 import unittest
 import numpy as np
 
-from gdshelpers.parts.port import Port
+from gdshelpers.parts.photonics.port import Port
 
 
 class PortTestCase(unittest.TestCase):

@@ -3,7 +3,7 @@ import shapely.geometry
 import shapely.ops
 import shapely.affinity
 
-from gdshelpers.parts import _fonts
+from gdshelpers.parts.photonics import _fonts
 from gdshelpers.helpers import normalize_phase
 from gdshelpers.helpers.alignment import Alignment
 

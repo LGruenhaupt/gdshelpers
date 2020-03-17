@@ -73,8 +73,8 @@ def write_cell_to_dxf_file(outfile, cell, max_points=4000, max_line_points=4000,
 
 
 if __name__ == '__main__':
-    from gdshelpers.parts.port import Port
-    from gdshelpers.parts.waveguide import Waveguide
+    from gdshelpers.parts.photonics.port import Port
+    from gdshelpers.parts.photonics.waveguide import Waveguide
     from gdshelpers.geometry.chip import Cell
 
     device_cell = Cell('cell')

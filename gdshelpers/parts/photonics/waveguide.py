@@ -510,8 +510,8 @@ class Waveguide:
 
 def _example():
     from gdshelpers.geometry.chip import Cell
-    from gdshelpers.parts.splitter import Splitter
-    from gdshelpers.parts.coupler import GratingCoupler
+    from gdshelpers.parts.photonics.splitter import Splitter
+    from gdshelpers.parts.photonics.coupler import GratingCoupler
 
     port = Port([0, 0], 0, 1)
     path = Waveguide.make_at_port(port)

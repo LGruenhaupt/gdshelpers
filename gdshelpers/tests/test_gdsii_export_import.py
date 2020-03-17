@@ -3,9 +3,9 @@ import unittest
 import numpy as np
 from shapely.affinity import translate, rotate
 
-from gdshelpers.parts.waveguide import Waveguide
+from gdshelpers.parts.photonics.waveguide import Waveguide
 from gdshelpers.geometry.chip import Cell
-from gdshelpers.parts.pattern_import import GDSIIImport
+from gdshelpers.parts.photonics.pattern_import import GDSIIImport
 
 
 class GdsTestCase(unittest.TestCase):

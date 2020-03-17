@@ -1,6 +1,6 @@
 from itertools import product
 
-from gdshelpers.parts.marker import SquareMarker
+from gdshelpers.parts.photonics.marker import SquareMarker
 
 
 def raith_marker_frame(bounds, padding=100, pitch=200, size=20, n=5):

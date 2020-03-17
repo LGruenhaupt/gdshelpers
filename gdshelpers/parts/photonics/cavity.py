@@ -2,9 +2,9 @@ import numpy as np
 import shapely.geometry
 from shapely.geometry import Point
 
-from gdshelpers.parts.port import Port
+from gdshelpers.parts.photonics.port import Port
 from gdshelpers.helpers import StandardLayers
-from gdshelpers.parts.waveguide import Waveguide
+from gdshelpers.parts.photonics.waveguide import Waveguide
 
 
 class PhotonicCrystalCavity:

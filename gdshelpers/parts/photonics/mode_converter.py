@@ -1,6 +1,6 @@
 import numpy as np
 
-from gdshelpers.parts.waveguide import Waveguide
+from gdshelpers.parts.photonics.waveguide import Waveguide
 from gdshelpers.parts import Port
 
 
@@ -117,9 +117,9 @@ class StripToSlotModeConverter:
 
 def _example():
     from gdshelpers.geometry.chip import Cell
-    from gdshelpers.parts.port import Port
-    from gdshelpers.parts.waveguide import Waveguide
-    from gdshelpers.parts.mode_converter import StripToSlotModeConverter
+    from gdshelpers.parts.photonics.port import Port
+    from gdshelpers.parts.photonics.waveguide import Waveguide
+    from gdshelpers.parts.photonics.mode_converter import StripToSlotModeConverter
 
     wg_1 = Waveguide.make_at_port(Port(origin=(0, 0), angle=0, width=1.2))  # scalar as width -> strip waveguide
     wg_1.add_straight_segment(5)

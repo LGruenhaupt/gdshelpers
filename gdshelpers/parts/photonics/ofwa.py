@@ -5,8 +5,8 @@ Parts for Optical Field Writable Arrays (OFWA)
 import numpy as np
 
 from gdshelpers.parts import Port
-from gdshelpers.parts.waveguide import Waveguide
-from gdshelpers.parts.marker import DLWMarker
+from gdshelpers.parts.photonics.waveguide import Waveguide
+from gdshelpers.parts.photonics.marker import DLWMarker
 
 from gdshelpers.geometry import geometric_union
 from gdshelpers.helpers import normalize_phase
@@ -200,7 +200,7 @@ class MultiPortSwitch:
 def _example():
     import gdsCAD.core
     from gdshelpers.geometry import convert_to_gdscad
-    from gdshelpers.parts.waveguide import Waveguide
+    from gdshelpers.parts.photonics.waveguide import Waveguide
 
     mpsv2 = MultiPortSwitch(origin=[0, 0],
                             angle=np.deg2rad(0.),

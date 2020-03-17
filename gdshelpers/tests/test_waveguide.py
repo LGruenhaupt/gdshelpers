@@ -1,7 +1,7 @@
 import unittest
 import math
 
-from gdshelpers.parts.waveguide import Waveguide
+from gdshelpers.parts.photonics.waveguide import Waveguide
 
 
 class WaveguideTestCase(unittest.TestCase):

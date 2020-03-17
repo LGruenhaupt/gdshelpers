@@ -1,6 +1,6 @@
 import unittest
 
-from gdshelpers.parts.resonator import RingResonator
+from gdshelpers.parts.photonics.resonator import RingResonator
 
 
 class RingResonatorTestCase(unittest.TestCase):

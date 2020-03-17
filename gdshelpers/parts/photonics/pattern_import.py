@@ -44,7 +44,7 @@ class GDSIIImport:
 
 
 if __name__ == '__main__':
-    from gdshelpers.parts.waveguide import _example
+    from gdshelpers.parts.photonics.waveguide import _example
     from gdshelpers.geometry.chip import Cell
 
     _example()  # make sure the "output.gds" exists
