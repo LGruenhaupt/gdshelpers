@@ -3,7 +3,7 @@ import numpy as np
 import shapely.geometry
 import shapely.affinity
 
-from gdshelpers.parts import Port
+from gdshelpers.parts.photonics import Port
 from gdshelpers.geometry import geometric_union
 from gdshelpers.parts.photonics.waveguide import Waveguide
 

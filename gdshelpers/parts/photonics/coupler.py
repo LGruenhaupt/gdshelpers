@@ -4,7 +4,7 @@ import shapely.geometry
 import shapely.affinity
 import shapely.validation
 
-from gdshelpers.parts import Port
+from gdshelpers.parts.photonics import Port
 from gdshelpers.parts.photonics.coupler_references import REFERENCES as COUPLER_REFERENCES
 from gdshelpers.parts.photonics.text import Text
 from gdshelpers.helpers import StandardLayers

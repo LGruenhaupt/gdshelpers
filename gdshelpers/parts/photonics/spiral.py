@@ -1,7 +1,7 @@
 import numpy as np
 
 from gdshelpers.geometry import geometric_union
-from gdshelpers.parts import Port
+from gdshelpers.parts.photonics import Port
 from gdshelpers.parts.photonics.waveguide import Waveguide
 
 

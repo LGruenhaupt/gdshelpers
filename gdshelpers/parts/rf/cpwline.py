@@ -10,7 +10,7 @@ import shapely.affinity
 import shapely.ops
 import shapely.validation
 
-from gdshelpers.parts.cpwport import CPWport
+from gdshelpers.parts.rf.cpwport import CPWport
 from gdshelpers.helpers import find_line_intersection, normalize_phase
 
 class CPWline(object):

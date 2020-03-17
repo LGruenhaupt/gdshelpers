@@ -10,8 +10,8 @@ import shapely.affinity
 import shapely.ops
 import shapely.validation
 
-from gdshelpers.parts.electrodeport import Electrodeport
-from gdshelpers.parts.electrodeline import Electrodeline
+from gdshelpers.parts.rf.electrodeport import Electrodeport
+from gdshelpers.parts.rf.electrodeline import Electrodeline
 from gdshelpers.helpers import find_line_intersection, normalize_phase
 from gdshelpers.geometry import geometric_union
 

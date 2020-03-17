@@ -1,6 +1,6 @@
 import numpy as np
 
-from gdshelpers.parts import Port
+from gdshelpers.parts.photonics import Port
 from gdshelpers.geometry import convert_to_gdscad
 from gdshelpers.parts.photonics.waveguide import Waveguide
 from gdshelpers.parts.photonics.splitter import Splitter, MMI

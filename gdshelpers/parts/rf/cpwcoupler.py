@@ -6,7 +6,7 @@ import shapely.geometry
 import shapely.affinity
 import shapely.validation
 
-from gdshelpers.parts.cpwport import CPWport
+from gdshelpers.parts.rf.cpwport import CPWport
 
 
 class CPWcoupler(object):

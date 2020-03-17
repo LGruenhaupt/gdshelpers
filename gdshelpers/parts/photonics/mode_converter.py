@@ -1,7 +1,7 @@
 import numpy as np
 
 from gdshelpers.parts.photonics.waveguide import Waveguide
-from gdshelpers.parts import Port
+from gdshelpers.parts.photonics import Port
 
 
 class StripToSlotModeConverter:

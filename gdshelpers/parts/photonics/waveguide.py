@@ -8,7 +8,7 @@ import shapely.affinity
 import shapely.ops
 import shapely.validation
 
-from gdshelpers.parts import Port
+from gdshelpers.parts.photonics import Port
 from gdshelpers.helpers import find_line_intersection, normalize_phase
 from gdshelpers.helpers.bezier import CubicBezierCurve
 from gdshelpers.helpers.positive_resist import convert_to_positive_resist

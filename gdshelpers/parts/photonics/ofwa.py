@@ -4,7 +4,7 @@ Parts for Optical Field Writable Arrays (OFWA)
 
 import numpy as np
 
-from gdshelpers.parts import Port
+from gdshelpers.parts.photonics import Port
 from gdshelpers.parts.photonics.waveguide import Waveguide
 from gdshelpers.parts.photonics.marker import DLWMarker
 
